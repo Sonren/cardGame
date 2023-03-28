@@ -3,7 +3,7 @@
  */
 
 export enum ColorCards {
-    pique="pique", carreau="carreau", trèfle="trèfle", coeur="coeur",
+    pique = "pique", carreau = "carreau", trèfle = "trèfle", coeur = "coeur",
 }
 
 /**
@@ -35,8 +35,25 @@ function createCards ( color : ColorCards, value : number) : Cards {
 /**
  * fonction qui va afficher la carte pris en entrée (couleur et valeur)
  * @param cardToAffiche carte qui faut afficher
- * ne retourne rien mais produit un affichage
+ * ne retourne rien mais produit un affichage en fonction de son symbole
  */
 function afficheCard ( cardToAffiche : Cards) {
-    console.log ("la carte est de couleur", cardToAffiche.colorCard ,"et a pour valeur", cardToAffiche.valueCard);
+    if (cardToAffiche.colorCard = ColorCards.pique) {
+        console.log ("la carte a pour symbole ♠️ et a pour valeur", cardToAffiche.valueCard);
+    }
+    if (cardToAffiche.colorCard = ColorCards.carreau) {
+        console.log ("la carte a pour symbole ♦️ et a pour valeur", cardToAffiche.valueCard);
+    }
+    if (cardToAffiche.colorCard = ColorCards.trèfle) {
+        console.log ("la carte a pour symbole ♣️ et a pour valeur", cardToAffiche.valueCard);
+    }
+    if (cardToAffiche.colorCard = ColorCards.coeur) {
+        console.log ("la carte a pour symbole ♥️ et a pour valeur", cardToAffiche.valueCard);
+    }
 }
+
+
+
+
+
+//function compareCards ()
