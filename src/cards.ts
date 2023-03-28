@@ -31,3 +31,12 @@ function createCards ( color : ColorCards, value : number) : Cards {
     let card : Cards = {colorCard : color, valueCard : value};
     return card;
 }
+
+/**
+ * fonction qui va afficher la carte pris en entrée (couleur et valeur)
+ * @param cardToAffiche carte qui faut afficher
+ * ne retourne rien mais produit un affichage
+ */
+function afficheCard ( cardToAffiche : Cards) {
+    console.log ("la carte est de couleur", cardToAffiche.colorCard ,"et a pour valeur", cardToAffiche.valueCard);
+}
