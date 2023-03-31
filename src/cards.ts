@@ -53,7 +53,14 @@ function afficheCard ( cardToAffiche : Cards) {
 }
 
 
-
+/**
+ * fonction qui compare deux cartes placé en entrée 
+ * @param basiCard carte qui est comparé a cardsToCompare (carte 1)
+ * @param cardToCompare carte qui va etre comparé a basicCard (carte 2)
+ * @returns un nombre, 1 si carte 2 < carte 1
+ *                     0 si carte 2 = carte 1
+ *                    -1 si carte 1 < carte 2
+ */
 function compareCards (basiCard : Cards, cardToCompare : Cards) : number{
     if (cardToCompare.valueCard < basiCard.valueCard){
         return 1;
