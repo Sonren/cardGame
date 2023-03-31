@@ -31,3 +31,10 @@ export function createGame () : Array<Cards> {
 }
 
 
+export function cardsPull (game : Array<Cards> ) : number {
+    let tCardPull : Array<Cards>;
+    tCardPull = game.splice(0, 1);
+    return tCardPull[1].valueCard;
+
+}
+
