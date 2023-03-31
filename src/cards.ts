@@ -54,6 +54,17 @@ function afficheCard ( cardToAffiche : Cards) {
 
 
 
+function compareCards (basiCard : Cards, cardToCompare : Cards) : number{
+    if (cardToCompare.valueCard < basiCard.valueCard){
+        return 1;
+    }else{
+        if (cardToCompare.valueCard = basiCard.valueCard){
+            return 0;
+        }
+        return -1;
+    }
+}
 
 
-//function compareCards ()
+
+
