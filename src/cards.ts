@@ -34,7 +34,7 @@ export type  Cards = {
  * @returns une carte du jeu avec une couleur et une valeur
  */
 
-function createCards ( color : ColorCards, value : number) : Cards {
+export function createCards ( color : ColorCards, value : number) : Cards {
     let card : Cards = {colorCard : color, valueCard : value};
     return card;
 }
@@ -44,7 +44,7 @@ function createCards ( color : ColorCards, value : number) : Cards {
  * @param cardToAffiche carte qui faut afficher
  * ne retourne rien mais produit un affichage en fonction de son symbole
  */
-function afficheCard ( cardToAffiche : Cards) {
+export function afficheCard ( cardToAffiche : Cards) {
     if (cardToAffiche.colorCard = ColorCards.pique) {
         console.log ("la carte a pour symbole ♠️ et a pour valeur", cardToAffiche.valueCard);
     }
@@ -68,7 +68,7 @@ function afficheCard ( cardToAffiche : Cards) {
  *                     0 si carte 2 = carte 1
  *                    -1 si carte 1 < carte 2
  */
-function compareCards (basiCard : Cards, cardToCompare : Cards) : number{
+export function compareCards (basiCard : Cards, cardToCompare : Cards) : number{
     if (cardToCompare.valueCard < basiCard.valueCard){
         return 1;
     }else{
