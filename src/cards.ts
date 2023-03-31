@@ -1,4 +1,11 @@
 /**
+ * Ensemble de fonctions qui définisse une carte a jouer pour un jeu de 52 cartes
+ * 
+ * @module
+ */
+
+
+/**
  * Represente les différente couleurs que peuvent prendre les cartes
  */
 
