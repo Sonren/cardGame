@@ -30,6 +30,11 @@ export function createGame () : Array<Cards> {
     return cardGame;
 }
 
+/**
+ * 
+ * @param game fonction qui retire la premiere carte du tableau 
+ * @returns un nombre qui correspond a la valeur de la premiere carte du tableau 
+ */
 
 export function cardsPull (game : Array<Cards> ) : number {
     let tCardPull : Array<Cards>;
