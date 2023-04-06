@@ -45,16 +45,16 @@ export function createCards ( color : ColorCards, value : number) : Cards {
  * ne retourne rien mais produit un affichage en fonction de son symbole
  */
 export function afficheCard ( cardToAffiche : Cards) {
-    if (cardToAffiche.colorCard = ColorCards.pique) {
+    if (cardToAffiche.colorCard === ColorCards.pique) {
         console.log ("la carte a pour symbole ♠️ et a pour valeur", cardToAffiche.valueCard);
     }
-    if (cardToAffiche.colorCard = ColorCards.carreau) {
+    if (cardToAffiche.colorCard === ColorCards.carreau) {
         console.log ("la carte a pour symbole ♦️ et a pour valeur", cardToAffiche.valueCard);
     }
-    if (cardToAffiche.colorCard = ColorCards.trèfle) {
+    if (cardToAffiche.colorCard === ColorCards.trèfle) {
         console.log ("la carte a pour symbole ♣️ et a pour valeur", cardToAffiche.valueCard);
     }
-    if (cardToAffiche.colorCard = ColorCards.coeur) {
+    if (cardToAffiche.colorCard === ColorCards.coeur) {
         console.log ("la carte a pour symbole ♥️ et a pour valeur", cardToAffiche.valueCard);
     }
 }
@@ -81,4 +81,17 @@ export function compareCards (basiCard : Cards, cardToCompare : Cards) : number{
 
 
 
+let dameDePique : Cards;
+let neufDeTrefle : Cards;
+let verifCompare : number;
 
+dameDePique = createCards(ColorCards.pique, 12);
+neufDeTrefle = createCards(ColorCards.trèfle, 9);
+afficheCard(neufDeTrefle);
+afficheCard(dameDePique);
+verifCompare = compareCards(dameDePique, neufDeTrefle);
+if (verifCompare === 1){
+    console.log("la première carte est plus grande");
+}else{
+    console.log("la deuxième carte est plus grande");
+}
